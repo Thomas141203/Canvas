@@ -1,0 +1,25 @@
+body{
+ background-color:#FF9999;
+}
+
+#canvas1{
+ border: 3px solid green;
+ background-color:#FFFFFF;
+}
+
+input[type=button]{
+  background-color:yellow;
+  color:blue;
+  border:solid 2px red;
+  border-radius:5px;
+}
+
+option{
+ background-color:yellow;
+ color:#000077;
+}
+
+optgroup{
+  background-color:#AAFFAA;
+  color:red;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr"> 
+<head>
+
+  <meta  charset="utf-8">
+	<title>Canvas</title>
+	<link rel="stylesheet" type="text/css" href="init.css">
+</head>
+<body onload="raz();">
+<!--div id="can"-->
+  <canvas id="canvas1" width="900" height="500">
+  </canvas>
+
+<form id="form1" method="post" action="mailto:toto@wanadoo.fr">
+  
+  <div>
+   <fieldset id="choixRepere">
+
+     <legend> Affichage du repère</legend>
+
+     <input type="radio" id="repereOui" name="Repere" checked="checked" onchange="repere()">
+
+     <label for="repereOui">Oui</label>
+
+     <label for="repereNon">Non</label>
+
+     <input type="radio" id="repereNon" name="Repere"  onchange="repere()">
+
+   </fieldset>
+  </div>
+  <div>
+      
+   <fieldset id="controleZoom">
+
+     <legend>Contrôle du tracé des courbes</legend>
+
+     <input type="range" id="zoom" name="zoom" min="0.1" max="10" step="0.1" onchange="modifEchelle();">
+
+     <label for="zoom">Zoom</label>
+
+     <label for="valZoom"> Valeur du zoom</label>
+
+     <input type="text" id="valZoom" name="valZoom"  onchange="razZoom();">
+
+     <br>
+
+      
+     <input type="range" id="TransX" name="TransX" min="-10" max="10" step="0.25"   onchange="modifEchelle();">
+
+     <label for="TransX">Translation en x</label>
+
+     <label for="ValTransX"> Valeur de l'abscisse</label>
+
+     <input type="text" id="ValTransX" name="ValTransX" onchange="razTx();"> 
+
+     <br>
+
+     <input type="range" id="TransY" name="TransY" min="-5" max="5" step="0.25"  onchange="modifEchelle();">
+
+     <label for="TransY">Translation en y</label>
+
+     <label for="ValTransY"> Valeur de l'ordonnée</label>
+
+     <input type="text" id="ValTransY" name="ValTransY"  onchange="razTy();">
+
+   </fieldset>
+  </div>
+</form>  
+  <script  type="text/javascript" src="init.js">
+</script>
+</body>
+</html>
